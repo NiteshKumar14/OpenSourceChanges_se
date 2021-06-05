@@ -1,0 +1,4 @@
+ {% extends 'base/base.html' %}{% block content %} {% include 'base/navbar.html' %} {% if user.is_authenticated %} Hello, {{ user.username|default:'Guest' }}! {% else %}
+
+<p>Please login to see this page.</p>
+{% endif %} {% endblock %}
